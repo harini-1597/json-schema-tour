@@ -6,8 +6,8 @@ type Props = {}
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-white relative top-0 z-[170] drop-shadow-lg">
-        <div className="flex justify-between items-center px-8 py-4">
+    <nav className="relative flex w-screen items-center h-18 bg-white top-0 z-[170] drop-shadow-lg">
+        <div className="flex justify-between items-center px-8 py-4 w-full">
             <div className="flex items-center">
               <Link href="/">
               <Image src="logo-blue.svg" alt="logo" width={120} height={40} />

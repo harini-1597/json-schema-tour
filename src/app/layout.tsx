@@ -1,6 +1,8 @@
-import Navbar from "../../components/navbar/navbar";
 import "./globals.css";
 import Head from "next/head";
+import Nextbar from "../../components/nextbar/nextbar";
+import Workspace from "../../components/workspace/workspace";
+import Navbar from "../../components/navbar/navbar";
 
 export default function RootLayout({
   children,
@@ -19,8 +21,10 @@ export default function RootLayout({
 				/>
       </head>
       <body>
-        <Navbar />
-        <main className="relative overflow-hidden">
+        <main className="fixed min-h-screen">
+          {/* <Navbar />
+          <Workspace />
+          <Nextbar /> */}
           {children}
         </main>
         {/* <Footer /> */}

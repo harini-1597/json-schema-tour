@@ -1,33 +1,40 @@
 import React from "react";
-import { BsChevronUp } from "react-icons/bs";
+import { VscRunAll } from "react-icons/vsc";
+import { IoEnterOutline } from "react-icons/io5";
 
 type EditorFooterProps = {};
 
 const EditorFooter: React.FC<EditorFooterProps> = () => {
 	return (
-		<div className='flex bg-white absolute bottom-10 z-10 w-1/2'>
-			<div className='mx-2 my-[10px] flex justify-between w-full'>
-				<div className='mr-2 flex flex-1 flex-nowrap items-center space-x-4'>
-					<button className='px-3 py-1.5 font-medium items-center transition-all inline-flex bg-dark-fill-3 text-sm hover:bg-dark-fill-2 text-dark-label-2 rounded-lg pl-3 pr-2'>
-						Console
-						<div className='ml-1 transform transition flex items-center'>
-							<BsChevronUp className='fill-gray-6 mx-1 fill-dark-gray-6' />
-						</div>
-					</button>
-				</div>
-				<div className='ml-2 flex items-center space-x-4'>
-					<button
-						className='px-3 py-1.5 text-l font-medium items-center whitespace-nowrap 
-                        transition-all focus:outline-none inline-flex bg-zinc-400  hover:bg-zinc-600 text-black rounded-lg'>
-						Run
-					</button>
-					<button
-						className='px-3 py-1.5 text-l font-medium items-center whitespace-nowrap 
-                        transition-all focus:outline-none inline-flex bg-zinc-400  hover:bg-zinc-600 text-black rounded-lg'>
-						Submit
-					</button>
+		<div className="">
+		<div className='explorer flex items-center justify-between w-full'>
+			<div className='flex items-center text-gray-700'>
+				<div className='menu-button-name flex items-center focus:outline-none bg-white font-medium'>
+					<div className='flex items-center px-1'>
+						<div>Example</div>
+					</div>
 				</div>
 			</div>
+			<div className='flex items-center text-gray-700'>
+				<div className='menu-button-name flex items-center focus:outline-none bg-white font-medium'>
+					<div className='flex items-center px-1'>
+						<div>Testcase</div>
+					</div>
+				</div>
+			</div>
+			<button className='buttons flex items-center justify-end ml-auto text-lg bg-slate-100  px-1 py-1 border-solid border-2 border-gray-300 rounded transition-all focus:outline-none hover:bg-slate-300'>
+				<VscRunAll />
+            </button>
+            <button className='buttons flex items-center justify-end mr-3 ml-1 text-lg bg-slate-100  px-1 py-1 border-solid border-2 border-gray-300 rounded transition-all focus:outline-none hover:bg-slate-300'>
+				<IoEnterOutline />
+            </button>
+		</div>
+		<div className="font-medium">
+			<p className="text-base font-medium mt-4 ml-2 text-black">Sample:</p>
+			<div className="w-full cursor-text rounded-lg border ml-2 mr-2 px-3 py-[10px] bg-slate-300 border-transparent text-gray-800 mt-2">
+			testcases and examples go here 
+			</div>
+		</div>
 		</div>
 	);
 };

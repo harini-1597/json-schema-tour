@@ -11,7 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "lilac": "#F3F1F8"
+        "lilac": "#F3F1F8",
+        "logo-blue": "#2B00C7",
+        "abyss": "#10042d"
       },
     },
   },
