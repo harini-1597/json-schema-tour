@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Page( {params} ) {
+export default function Page( {} ) {
   return (
-    <div>hello {params.pgid}</div>
+    <div>hello</div>
   );
 }
