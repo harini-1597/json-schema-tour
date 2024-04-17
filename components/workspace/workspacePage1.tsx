@@ -1,16 +1,16 @@
 "use client"
 import Split from 'react-split'
 import React from 'react';
-import ProblemDesc from './problemDesc/problemDesc';
 import CodeEditor from './codeEditor/codeEditor';
+import ProblemDescCSD from './problemDesc/problemDescCSD';
 
-const Workspace = () => {
+const WorkspacePage1 = () => {
   return (
     <Split className="split-row" minSize={0}>
-      <div className='h-lvh overflow-y-auto'><ProblemDesc /></div>
+      <div className='h-lvh overflow-y-auto'><ProblemDescCSD /></div>
       <CodeEditor />
     </Split>
   );
 };
 
-export default Workspace;
+export default WorkspacePage1;

@@ -6,7 +6,7 @@ type EditorFooterProps = {};
 
 const EditorFooter: React.FC<EditorFooterProps> = () => {
 	return (
-		<div className="">
+		<div className="w-full flex-col">
 		<div className='explorer flex items-center justify-between w-full'>
 			<div className='flex items-center text-gray-700'>
 				<div className='menu-button-name flex items-center focus:outline-none bg-white font-medium'>
@@ -31,7 +31,7 @@ const EditorFooter: React.FC<EditorFooterProps> = () => {
 		</div>
 		<div className="font-medium">
 			<p className="text-base font-medium mt-4 ml-2 text-black">Sample:</p>
-			<div className="w-full cursor-text rounded-lg border ml-2 mr-2 px-3 py-[10px] bg-slate-300 border-transparent text-gray-800 mt-2">
+			<div className="relative flex justify-normal cursor-text rounded-lg border ml-2 mr-2 px-3 py-[10px] bg-slate-300 border-transparent text-gray-800 mt-2 overflow-auto">
 			testcases and examples go here 
 			</div>
 		</div>

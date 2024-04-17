@@ -1,7 +1,19 @@
 import React from "react";
+import Navbar from "../../../../components/navbar/navbar";
+import Nextbar from "../../../../components/nextbar/nextbar";
+import WorkspacePage1 from "../../../../components/workspace/workspacePage1";
+import { Page } from "@/utils/types/pages";
 
-export default function Page( {} ) {
+
+
+const TourPage = () => {
   return (
-    <div>hello</div>
+    <>
+      <Navbar />
+      <WorkspacePage1 />
+      <Nextbar />
+    </>
   );
 }
+
+export default TourPage;
