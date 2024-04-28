@@ -17,7 +17,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#deployments">Getting Started</a>
+      <a href="#deployments">Deployments</a>
     </li>
     <li>
       <a href="#about-the-project">About The Project</a>
