@@ -21,17 +21,15 @@
     </li>
     <li>
       <a href="#about-the-project">About The Project</a>
+    </li>
     <li>
       <a href="#built-with">Built With</a>
     </li>
     <li>
-      <a href="#installation">Getting Started</a>
+      <a href="#installation">Installation</a>
     </li>
     <li>
-      <a href="#contributing">Getting Started</a>
-    </li>
-    <li>
-      <a href="#acknowledgments">Getting Started</a>
+      <a href="#contributing">Contributing</a>
     </li>
   </ol>
 </details>
