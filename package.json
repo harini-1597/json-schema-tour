@@ -1,7 +1,7 @@
 {
+  "homepage": "http://harini-1597.github.io/json-schema-tour",
   "name": "json-schema-tour",
   "version": "0.1.0",
-  "homepage": "http://harini-1597.github.io/json-schema-tour",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -14,7 +14,7 @@ export type Page = {
 	// constraints: string;
 	order: number;
 	starterCode: string;
-	// handlerFunction: ((fn: any) => boolean) | string;
+	handlerFunction: (fn: any) => Promise<void> | string;
 	starterFunctionName: string;
 };
 

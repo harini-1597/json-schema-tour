@@ -1,6 +1,51 @@
 import { Page } from "../types/pages";
+import Ajv2020 from "ajv/dist/2020";
 
 const starterCodeCSD = `{create your schema definition: "here"};`;
+
+const handlerJSON = async (fn: any) => {
+    const ajv = new Ajv2020({ strict: true, allErrors: true });
+    try {
+        const schema = JSON.parse(fn.code);
+        if (!schema.$schema) {
+            fn.setValidity(
+                "Unable to determine a dialect for the schema. The dialect can be declared in a number of ways, but the recommended way is to use the '$schema' keyword in your schema."
+            );
+            fn.setIsInvalid(true);
+            return;
+        } else if (
+            schema.$schema !== "https://json-schema.org/draft/2020-12/schema"
+        ) {
+            fn.setValidity(
+                "Not a valid JSON Schema for draft 2020-12.\nPlease set $schema to https://json-schema.org/draft/2020-12/schema"
+            );
+            fn.setIsInvalid(true);
+            return;
+        }
+
+        const valid = await ajv.validateSchema(schema);
+        if (valid) {
+            fn.setValidity("Correct! Let's move on to the next step.");
+            fn.setIsInvalid(false);
+        } else {
+            fn.setValidity(ajv.errorsText());
+            fn.setIsInvalid(true);
+        }
+    } catch (e) {
+        fn.setValidity(JSON.stringify((e as Error).message));
+        fn.setIsInvalid(true);
+    }
+};
+
+// Example usage:
+const myFunction = {
+    code: `{\n    \n}`,
+    setValidity: (message: string) => console.log("Validity:", message),
+    setIsInvalid: (isInvalid: boolean) => console.log("Is Invalid:", isInvalid),
+};
+
+handlerJSON(myFunction);
+
 
 export const CSD: Page = {
 	id: "create-schema-definiton",
@@ -41,5 +86,6 @@ export const CSD: Page = {
 	],
 	order: 1,
 	starterCode: starterCodeCSD,
+	handlerFunction: handlerJSON,
 	starterFunctionName: `{"$schema": "https://json-schema.org/draft/2020-12/schema"}`,
 };
