@@ -46,9 +46,11 @@ App can be viewed on:
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://tourofjsonschema.netlify.app)
-<br/>
+<br>
 Usually, to pick up a new language, one goes to the Documentation and reads and understands for themselves or watches an online tutorial.
+<br>
 *What if we could combine them both?*
+<br>
 This project aims to do exactly that, to create an interactive learning platform, "A Tour of JSON Schema" to make the learning process easier and enjoyable for new users. This project will provide a step-by-step guided tour to new users, with each step building upto creating a perfect JSON Schema document to fulfill specific requirements.
 
 ### Built With
