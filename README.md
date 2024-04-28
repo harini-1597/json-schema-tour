@@ -1,8 +1,4 @@
-
-<a name="readme-top"></a>
-
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <a href="https://github.com/harini-1597/json-schema-tour">
     <h3 align="center">A Tour Of JSON Schema</h3>
@@ -11,7 +7,7 @@
   <p align="center">
     The following is the qualification task for <a href="https://github.com/json-schema-org/community/blob/main/programs/mentoring/gsoc/gsoc-2024.md"><strong>GSOC 2024</strong></a> , for the organiztion <a href="https://json-schema.org/"><strong>JSON Schema</strong></a>
     <br />
-    <a href="https://github.com/json-schema-org/community/issues/645"><strong>Issue</strong></a>
+    <a href="https://github.com/json-schema-org/community/issues/645"><strong>#ISSUE</strong></a>
     <br />
   </p>
 </div>
@@ -49,8 +45,11 @@ App can be viewed on:
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
+[![Product Name Screen Shot][product-screenshot]](https://tourofjsonschema.netlify.app)
+<br/>
+Usually, to pick up a new language, one goes to the Documentation and reads and understands for themselves or watches an online tutorial.
+*What if we could combine them both?*
+This project aims to do exactly that, to create an interactive learning platform, "A Tour of JSON Schema" to make the learning process easier and enjoyable for new users. This project will provide a step-by-step guided tour to new users, with each step building upto creating a perfect JSON Schema document to fulfill specific requirements.
 
 ### Built With
 
@@ -80,7 +79,7 @@ App can be viewed on:
    ```
 3. Run locally on `localhost:3000`
    ```sh
-   npm run dev;
+   npm run dev
    ```
 
 ## Contributing
@@ -95,7 +94,7 @@ Also used in this project are:
 * [Font Awesome](https://fontawesome.com/icons/react)
 * [React Split](https://split.js.org/)
 * [AJV](https://ajv.js.org/)
-* [Assert] (https://nodejs.org/api/assert.html)
+* [Assert](https://nodejs.org/api/assert.html)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
